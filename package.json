@@ -1,8 +1,8 @@
 {
-  "homepage": "http://rshah5.github.io/rshah5.github.io",
   "name": "rshah5.github.io",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://rshah5.github.io/rshah5.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
