@@ -5,20 +5,23 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+      <header className="header">
+        <div>
+          <img src={logo} className="logo" alt="longshah"/>
+        </div>
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          className="link"
+          href="/"
           target="_blank"
-          rel="noopener noreferrer"
         >
-          Learn React
+          LongShah LLC.
         </a>
       </header>
+      <div>
+        <div href="#" title="Button One" className="button one">
+          welcome to LongShah LLC. We are working on amazing things coming soon this Summer! stay tuned...
+        </div>
+      </div>
     </div>
   );
 }

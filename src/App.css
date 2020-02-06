@@ -1,38 +1,93 @@
 .App {
   text-align: center;
+  background-color: rgba(254, 255, 217, 0.52);
+    min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
+.logo {
+  height: 60vmin;
   pointer-events: none;
+  cursor:pointer;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  /*.App-logo {*/
+  /*  animation: App-logo-spin infinite 20s linear;*/
+  /*}*/
+  .header {
+    animation: header-logo-shimmer infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
+/*.header {*/
+/*  min-height: 100vh;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  font-size: calc(10px + 2vmin);*/
+/*  color: white;*/
+/*}*/
+
+
+.link {
   color: #61dafb;
+  text-decoration:none;
+  font-family: fantasy;
+}
+.link:hover{
+  color:hotpink;
 }
 
-@keyframes App-logo-spin {
+@keyframes header-logo-shimmer {
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
+}
+
+.button {
+  display: block;
+  position: relative;
+  margin:0 auto;
+  /*padding: 10px 0;*/
+  width: 50vw;
+  text-align: center;
+  color: #4e6575;
+  border-radius: 0 55px 0 5px;
+  font-family: fantasy;
+  font-size: 3px;
+}
+.button.one:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(255,255,255,0.4);
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+  text-transform: none;
+  color:hotpink;
+}
+.button.one:hover:after {
+  width: 200%;
+  background-color: rgba(255,105,180,0);
+  -webkit-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.logo.one:hover:after {
+  cursor:pointer;
+  width: 200%;
+  background-color: rgba(255,105,180,0);
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
